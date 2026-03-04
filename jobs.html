@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Browse Jobs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+   <!-- ================= SEARCH SECTION ================= -->
+   <section class="search-section"> 
+    <h2>Find Your Next Job</h2>
+
+        <form action="search-results.html" method="GET" class="search-form">
+
+            <div class="form-group">
+                <label for="jobTitle">Job Title</label>
+                <input type="text" id="jobTitle" name="jobTitle"
+                       placeholder="Enter job title" required>
+            </div>
+
+            <div class="form-group">
+                <label for="experience">Years of Experience</label>
+                <input type="number" id="experience" name="experience"
+                       min="0" placeholder="0">
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn-primary">Search</button>
+            </div>
+            </form>
+   </section>
+ <!-- ================= JOBS LIST ================= -->
+ <section class="jobs-container">
+
+               <!-- Job Card 1 -->
+
+  <article class="job-card">
+   
+            <h3>Frontend Developer</h3>
+            <p class="posted-date"><strong>Posted:</strong> 22 Feb 2026</p>
+            <p><strong>Company:</strong> Tech Solutions</p>
+            <p><strong>Salary:</strong> 12000 EGP</p>
+            <p><strong>Experience Required:</strong> 2 Years</p>
+            <p><strong>Job Type:</strong> Full-time</p>
+           <p><strong>Status:</strong> <span class="status open">Open</span></p>
+
+            <a href="job1-details.html">
+                <button class="btn-secondary">View Details</button>
+            </a>
+
+        </article>
+
+          <!-- Job Card 2 -->
+        <article class="job-card">
+
+            <h3>Backend Developer</h3>
+           <p class="posted-date"><strong>Posted:</strong> 20 Feb 2026</p>
+            <p><strong>Company:</strong> Smart Systems</p>
+            <p><strong>Salary:</strong> 15000 EGP</p>
+            <p><strong>Experience Required:</strong> 3 Years</p>
+             <p><strong>Job Type:</strong> Full-time</p>
+             <p><strong>Status:</strong> <span class="status closed">Closed</span></p>
+
+            <a href="job2-details.html">
+                <button class="btn-secondary" >View Details</button>
+            </a>
+
+        </article>
+
+        
+        <!-- Job Card 3 -->
+        <article class="job-card">
+
+            <h3>UI/UX Designer</h3>
+            <p class="posted-date"><strong>Posted:</strong> 25 Feb 2026</p>
+            <p><strong>Company:</strong> Creative Studio</p>
+            <p><strong>Salary:</strong> 9000 EGP</p>
+            <p><strong>Experience Required:</strong> 1 Year</p>
+             <p><strong>Job Type:</strong> Part-time</p>
+            <p><strong>Status:</strong> <span class="status open">Open</span></p>
+
+            <a href="job3-details.html">
+                <button class="btn-secondary">View Details</button>
+            </a>
+
+        </article>
+ </section>
+</body>
+</html>
