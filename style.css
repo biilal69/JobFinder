@@ -1,0 +1,222 @@
+/* GLOBAL */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: "Segoe UI", Arial, sans-serif;
+}
+
+
+body{
+    background: url("images/background.png") no-repeat center center;
+    background-size: cover;
+    background-color: #050b08;
+    min-height: 100vh;
+}
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 60px;
+background:#111;
+border-bottom:1px solid #00ff88;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+color:#00ff88;
+letter-spacing:1px;
+}
+
+.nav-links{
+list-style:none;
+display:flex;
+gap:30px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#ccc;
+font-weight:500;
+transition:0.2s;
+}
+
+.nav-links a:hover{
+color:#00ff88;
+}
+
+.active{
+color:#00ff88;
+font-weight:600;
+}
+
+
+/* CONTAINER */
+
+.container{
+width:85%;
+margin:auto;
+padding:40px 0;
+}
+
+h1{
+margin-bottom:30px;
+color:#00ff88;
+}
+
+
+
+/* SEARCH BAR */
+
+.search-bar{
+display:flex;
+gap:10px;
+margin-bottom:30px;
+}
+
+.search-bar input{
+flex:1;
+padding:12px;
+border-radius:25px;
+border:1px solid #333;
+background:#111;
+color:#fff;
+}
+
+.search-bar input:focus{
+outline:none;
+border:3px solid #00ff88;
+}
+
+
+
+/* JOB LIST */
+
+.job-list{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+
+
+/* JOB CARD */
+
+.job-card{
+background:#111;
+padding:20px;
+border-radius:8px;
+border:1px solid #1f1f1f;
+transition:0.25s;
+position:relative;
+}
+
+.job-card:hover{
+border:1px solid #00ff88;
+box-shadow:0 0 10px rgba(0,255,136,0.3);
+transform:translateY(-2px);
+}
+
+.job-card h2{
+font-size:18px;
+margin-bottom:6px;
+color:#00ff88;
+}
+
+.company{
+font-weight:600;
+margin-bottom:10px;
+color:#ddd;
+}
+
+.job-meta{
+font-size:14px;
+color:#aaa;
+margin-bottom:4px;
+}
+
+
+
+/* STATUS BADGES */
+
+.status{
+display:inline-block;
+margin-top:10px;
+margin-bottom:10px;
+padding:4px 10px;
+border-radius:4px;
+font-size:12px;
+font-weight:600;
+}
+
+.open{
+background:#003d26;
+color:#00ff88;
+}
+
+.applied{
+background:#00291a;
+color:#00ff88;
+}
+
+.review{
+background:#003d26;
+color:#9cffc9;
+}
+
+
+
+/* BUTTONS */
+
+.btn{
+padding:10px 18px;
+border:none;
+background:#00ff88;
+color:#000;
+border-radius:5px;
+cursor:pointer;
+font-weight:600;
+margin-top:10px;
+transition:0.2s;
+}
+
+.btn:hover{
+background:#00cc6a;
+}
+
+.disabled{
+background:#333;
+color:#999;
+cursor:not-allowed;
+}
+
+
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.navbar{
+flex-direction:column;
+gap:15px;
+}
+
+.nav-links{
+flex-direction:column;
+align-items:center;
+}
+
+.container{
+width:95%;
+}
+
+.search-bar{
+flex-direction:column;
+}
+
+}
