@@ -1,0 +1,60 @@
+/* GLOBAL */
+
+*{
+margin:0 !important;
+padding:0 ;
+box-sizing:border-box;
+font-family: "Segoe UI", Arial, sans-serif;
+}
+
+
+body{
+    background: url("images/background.png") no-repeat center center !important;
+    background-size: cover !important;
+    background-color: #050b08 !important;
+    min-height: 100vh !important;
+}
+
+/* NAVBAR */
+
+.navbar{
+display:flex !important;
+justify-content:space-between !important;
+align-items:center !important;
+padding:18px 60px !important;
+background:#111 !important;
+border-bottom:1px solid #00ff88 !important;
+}
+
+.logo{
+font-size:24px !important;
+font-weight:bold !important;
+color:#00ff88 !important;
+letter-spacing:1px !important;
+}
+
+.nav-links{
+list-style:none !important;
+display:flex !important;
+gap:30px !important;
+}
+
+.nav-links a{
+text-decoration:none !important;
+color:#ccc !important;
+font-weight:500 !important;
+transition:0.2s !important;
+}
+
+.nav-links a:hover{
+color:#00ff88 !important;
+}
+
+.active{
+color:#00ff88 !important;
+font-weight:600 !important;
+}
+
+#button-jobs {
+    margin-top: 60px !important;
+}

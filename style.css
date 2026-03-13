@@ -18,25 +18,25 @@ body{
 /* NAVBAR */
 
 .navbar{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:18px 60px;
-background:#111;
-border-bottom:1px solid #00ff88;
+display:flex !important;
+justify-content:space-between !important;
+align-items:center !important;
+padding:18px 60px !important;
+background:#111 !important;
+border-bottom:1px solid #00ff88 !important;
 }
 
 .logo{
-font-size:24px;
-font-weight:bold;
-color:#00ff88;
-letter-spacing:1px;
+font-size:24px !important;
+font-weight:bold !important;
+color:#00ff88 !important;
+letter-spacing:1px !important;
 }
 
 .nav-links{
-list-style:none;
-display:flex;
-gap:30px;
+list-style:none !important;
+display:flex !important;
+gap:30px !important;
 }
 
 .nav-links a{
