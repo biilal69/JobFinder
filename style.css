@@ -9,9 +9,9 @@
 
 
 body {
-    /* background: url("images/background.png") no-repeat center center; */
+    background: url("images/background.png") no-repeat center center;
     background-size: cover;
-    /* background-color: #050b08; */
+    background-color: #050b08;
     min-height: 100vh;
 }
 
