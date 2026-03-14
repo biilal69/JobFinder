@@ -7,95 +7,97 @@
     <title>UI/UX Designer | JobFinder</title>
    </head>
 <body>
-<h1><div class="logo">JobFinder</div></h1>
-<nav>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="jobs.html">Find Jobs</a></li>
-<li><a href="applied-jobs.html">Applied Jobs</a></li>
-<li><a href="login.html">Login</a></li>
-<li><a href="signup.html">Sign Up</a></li>
-</ul>
-</nav>
+    <header>
+        <div><h1 class="logo">JobFinder</h1></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html">Find Jobs</a></li>
+                <li><a href="applied-jobs.html">Applied Jobs</a></li>
+                <li><a href="index.html"><button>Logout</button></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="job-details-container">
 
+        <article class="job-details-card">
 
-<section class="job-details-container">
-
-    <article class="job-details-card">
-
-        <!-- ===== Job Header ===== -->
-        <header class="job-header">
-            <h2>UI/UX Designer</h2>
-            <p class="posted-date"><strong>Posted on:</strong> 25 Feb 2026</p>
-        </header>
+            <!-- ===== Job Header ===== -->
+            <header class="job-header">
+                <h2>UI/UX Designer</h2>
+                <p class="posted-date"><strong>Posted on:</strong> 25 Feb 2026</p>
+            </header>
 
 
         <!-- ===== Basic Information Section ===== -->
-        <section class="job-info-section">
-            <h3>Job Information</h3>
+            <section class="job-info-section">
+                <h3>Job Information</h3>
 
-            <div class="job-meta">
-                <p><strong>Company:</strong> Creative Studio</p>
-                <p><strong>Salary:</strong> 9000 EGP</p>
-                <p><strong>Experience Required:</strong> 1 Year</p>
-                <p><strong>Job Type:</strong> Part-time</p>
-                <p><strong>Status:</strong> 
-                    <span class="status open">Open</span>
+                <div class="job-meta">
+                    <p><strong>Company:</strong> Creative Studio</p>
+                    <p><strong>Salary:</strong> 9000 EGP</p>
+                    <p><strong>Experience Required:</strong> 1 Year</p>
+                    <p><strong>Job Type:</strong> Part-time</p>
+                    <p><strong>Status:</strong> 
+                        <span class="status open">Open</span>
+                    </p>
+                </div>
+            </section>
+
+
+            <!-- ===== Description Section ===== -->
+            <section class="job-description-section">
+                <h3>Job Description</h3>
+                <p>
+                    We are seeking a creative UX/UI Designer to enhance user
+                    experience across our digital platforms. The ideal candidate
+                    should understand user behavior and create intuitive interfaces.
                 </p>
-            </div>
-        </section>
+            </section>
 
 
-        <!-- ===== Description Section ===== -->
-        <section class="job-description-section">
-            <h3>Job Description</h3>
-            <p>
-                We are seeking a creative UX/UI Designer to enhance user
-                experience across our digital platforms. The ideal candidate
-                should understand user behavior and create intuitive interfaces.
-            </p>
-        </section>
+            <!-- ===== Responsibilities Section ===== -->
+            <section class="job-section">
+                <h3>Responsibilities</h3>
+                <ul>
+                    <li>Design user interfaces for web applications.</li>
+                    <li>Create wireframes and prototypes.</li>
+                    <li>Conduct usability testing.</li>
+                    <li>Improve overall user experience.</li>
+                    <li>Maintain design consistency.</li>
+                </ul>
+            </section>
 
 
-        <!-- ===== Responsibilities Section ===== -->
-        <section class="job-section">
-            <h3>Responsibilities</h3>
-            <ul>
-                <li>Design user interfaces for web applications.</li>
-                <li>Create wireframes and prototypes.</li>
-                <li>Conduct usability testing.</li>
-                <li>Improve overall user experience.</li>
-                <li>Maintain design consistency.</li>
-            </ul>
-        </section>
+            <!-- ===== Requirements Section ===== -->
+            <section class="job-section">
+                <h3>Requirements</h3>
+                <ul>
+                    <li>Basic knowledge of design principles.</li>
+                    <li>Familiarity with design tools (Figma, Adobe XD).</li>
+                    <li>Understanding of user-centered design.</li>
+                    <li>Creativity and attention to detail.</li>
+                    <li>Good communication skills.</li>
+                </ul>
+            </section>
 
 
-        <!-- ===== Requirements Section ===== -->
-        <section class="job-section">
-            <h3>Requirements</h3>
-            <ul>
-                <li>Basic knowledge of design principles.</li>
-                <li>Familiarity with design tools (Figma, Adobe XD).</li>
-                <li>Understanding of user-centered design.</li>
-                <li>Creativity and attention to detail.</li>
-                <li>Good communication skills.</li>
-            </ul>
-        </section>
+            <!-- ===== Apply Section ===== -->
+            <section class="apply-section">
+                <form action="applied-jobs.html" method="POST">
+                    <button type="submit" class="btn-primary">
+                        Apply Now
+                    </button>
+                </form>
 
+                <a href="jobs.html" class="back-btn">Back to Jobs</a>
+            </section>
 
-        <!-- ===== Apply Section ===== -->
-        <section class="apply-section">
-            <form action="applied-jobs.html" method="POST">
-                <button type="submit" class="btn-primary">
-                    Apply Now
-                </button>
-            </form>
-
-            <a href="jobs.html" class="back-btn">Back to Jobs</a>
-        </section>
-
-    </article>
-
-</section>
+        </article>
+    </section>
+    <footer>
+        &copy; 2026 JobFinder. All rights reserved.
+    </footer>
 </body>
 </html>

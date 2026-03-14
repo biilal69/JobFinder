@@ -7,97 +7,98 @@
     <title>Frontend Developer | JobFinder</title>
    </head>
 <body>
-
-    <h1><div class="logo">JobFinder</div></h1>
-
-<nav>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="jobs.html">Find Jobs</a></li>
-<li><a href="applied-jobs.html">Applied Jobs</a></li>
-<li><a href="login.html">Login</a></li>
-<li><a href="signup.html">Sign Up</a></li>
-</ul>
-</nav>
-
-
-<section class="job-details-container">
-
-    <article class="job-details-card">
-
-        <!-- ===== Job Header ===== -->
-        <header class="job-header">
-            <h2>Frontend Developer</h2>
-            <p class="posted-date"><strong>Posted on:</strong> 22 Feb 2026</p>
-        </header>
+    <header>
+        <div><h1 class="logo">JobFinder</h1></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html">Find Jobs</a></li>
+                <li><a href="applied-jobs.html">Applied Jobs</a></li>
+                <li><a href="index.html"><button>Logout</button></a></li>
+            </ul>
+        </nav>
+    </header>
 
 
-        <!-- ===== Basic Information Section ===== -->
-        <section class="job-info-section">
-            <h3>Job Information</h3>
+    <section class="job-details-container">
 
-            <div class="job-meta">
-                <p><strong>Company:</strong> Tech Solutions</p>
-                <p><strong>Salary:</strong> 12000 EGP</p>
-                <p><strong>Experience Required:</strong> 2 Years</p>
-                <p><strong>Job Type:</strong> Full-time</p>
-                <p><strong>Status:</strong> 
-                    <span class="status open">Open</span>
+        <article class="job-details-card">
+
+            <!-- ===== Job Header ===== -->
+            <header class="job-header">
+                <h2>Frontend Developer</h2>
+                <p class="posted-date"><strong>Posted on:</strong> 22 Feb 2026</p>
+            </header>
+
+
+            <!-- ===== Basic Information Section ===== -->
+            <section class="job-info-section">
+                <h3>Job Information</h3>
+
+                <div class="job-meta">
+                    <p><strong>Company:</strong> Tech Solutions</p>
+                    <p><strong>Salary:</strong> 12000 EGP</p>
+                    <p><strong>Experience Required:</strong> 2 Years</p>
+                    <p><strong>Job Type:</strong> Full-time</p>
+                    <p><strong>Status:</strong> 
+                        <span class="status open">Open</span>
+                    </p>
+                </div>
+            </section>
+
+
+            <!-- ===== Description Section ===== -->
+            <section class="job-description-section">
+                <h3>Job Description</h3>
+                <p>
+                    We are looking for a skilled frontend developer who can build
+                    responsive and modern web interfaces using HTML and CSS.
+                    The candidate should focus on performance and user experience.
                 </p>
-            </div>
-        </section>
+            </section>
 
 
-        <!-- ===== Description Section ===== -->
-        <section class="job-description-section">
-            <h3>Job Description</h3>
-            <p>
-                We are looking for a skilled frontend developer who can build
-                responsive and modern web interfaces using HTML and CSS.
-                The candidate should focus on performance and user experience.
-            </p>
-        </section>
+            <!-- ===== Responsibilities Section ===== -->
+            <section class="job-section">
+                <h3>Responsibilities</h3>
+                <ul>
+                    <li>Develop responsive web interfaces.</li>
+                    <li>Implement designs using HTML and CSS.</li>
+                    <li>Ensure cross-browser compatibility.</li>
+                    <li>Improve website performance.</li>
+                    <li>Collaborate with backend developers.</li>
+                </ul>
+            </section>
 
 
-        <!-- ===== Responsibilities Section ===== -->
-        <section class="job-section">
-            <h3>Responsibilities</h3>
-            <ul>
-                <li>Develop responsive web interfaces.</li>
-                <li>Implement designs using HTML and CSS.</li>
-                <li>Ensure cross-browser compatibility.</li>
-                <li>Improve website performance.</li>
-                <li>Collaborate with backend developers.</li>
-            </ul>
-        </section>
+            <!-- ===== Requirements Section ===== -->
+            <section class="job-section">
+                <h3>Requirements</h3>
+                <ul>
+                    <li>Strong understanding of HTML and CSS.</li>
+                    <li>Basic knowledge of JavaScript.</li>
+                    <li>Understanding of responsive design.</li>
+                    <li>Attention to detail.</li>
+                    <li>Ability to work in a team.</li>
+                </ul>
+            </section>
 
 
-        <!-- ===== Requirements Section ===== -->
-        <section class="job-section">
-            <h3>Requirements</h3>
-            <ul>
-                <li>Strong understanding of HTML and CSS.</li>
-                <li>Basic knowledge of JavaScript.</li>
-                <li>Understanding of responsive design.</li>
-                <li>Attention to detail.</li>
-                <li>Ability to work in a team.</li>
-            </ul>
-        </section>
+            <!-- ===== Apply Section ===== -->
+            <section class="apply-section">
+                <form action="applied-jobs.html" method="POST">
+                    <button type="submit" class="btn-primary">
+                        Apply Now
+                    </button>
+                </form>
 
+                <a href="jobs.html" class="back-btn">Back to Jobs</a>
+            </section>
 
-        <!-- ===== Apply Section ===== -->
-        <section class="apply-section">
-            <form action="applied-jobs.html" method="POST">
-                <button type="submit" class="btn-primary">
-                    Apply Now
-                </button>
-            </form>
-
-            <a href="jobs.html" class="back-btn">Back to Jobs</a>
-        </section>
-
-    </article>
-
-</section>
+        </article>
+    </section>
+    <footer>
+        &copy; 2026 JobFinder. All rights reserved.
+    </footer>
 </body>
 </html>

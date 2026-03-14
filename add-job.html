@@ -12,42 +12,44 @@
     -->
 
     <title>Add Job</title>
-    </head>
+ </head>
 <body>
 
-    
-    <nav class="navbar">
-    <div class="logo">JobFinder</div>
+    <!-- NavBar -->
+    <header>
+        <!-- Logo -->
+        <div><h1>JobFinder</h1></div>
         
-        <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="jobs.html">Find Jobs</a></li>
-        <li><a href="applied-jobs.html">Applied Jobs</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="signup.html">Sign Up</a></li>
-        </ul>
-
-    </nav>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="admin-dashboard.html">Dashboard</a></li>
+                <li><a href="admin-jobs.html">Company Jobs</a></li>
+                <li><a href="add-job.html">Add New Job</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <div class="Job-Form">
 
     <div id="formAdd" class="container py-5 m-auto text-success">
-  <label for="jobName">Position:</label>
-  <input type="text" value="" class="form-control mb-3 " id="jobName" required> <br>
+        <label for="jobName">Position:</label>
+        <input type="text" value="" class="form-control mb-3 " id="jobName" required> <br>
 
-  <label for="campany">Company:</label>
-  <input type="text" value="" class="form-control mb-3" id="campany" required> <br>
+        <label for="campany">Company:</label>
+        <input type="text" value="" class="form-control mb-3" id="campany" required> <br>
 
-  <label for="salary">Salary:</label>
-  <input type="number" value="" class="form-control mb-3" id="salary" required><br>
+        <label for="salary">Salary:</label>
+        <input type="number" value="" class="form-control mb-3" id="salary" required><br>
 
-  <label for="experience">Experience:</label>
-  <input type="number" value="" class="form-control mb-3" id="experience" required> <br>
+        <label for="experience">Experience:</label>
+        <input type="number" value="" class="form-control mb-3" id="experience" required> <br>
 
-  <label for="status">Status:</label>
-  <input type="text" value="" class="form-control mb-3" id="status" required><br>
+        <label for="status">Status:</label>
+        <input type="text" value="" class="form-control mb-3" id="status" required><br>
 
-  <button onclick="" class="btn btn-success btn w-100 "> Add Job</button>
+        <button onclick="" class="btn btn-success btn w-100 "> Add Job</button>
     </div>
    
 </div>
@@ -65,5 +67,8 @@
     <script>
     AOS.init();
     </script>
+    <footer>
+        &copy; 2026 JobFinder. All rights reserved.
+    </footer>
 </body>
 </html>
