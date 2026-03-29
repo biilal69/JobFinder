@@ -1,0 +1,73 @@
+.stats-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap; 
+    padding: 20px 0;
+    border: #001f75;
+}
+.dashboard-wrapper {
+    display: flex !important;
+    width: 100%;
+    min-height: 100vh;
+}
+main {
+    margin-top: 0%;
+    flex-grow: 1;
+    padding-left:20px;
+    background-color: #f8fafc;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+}
+
+.card {
+    min-width: 250px;
+    font-size:x-large;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 12px 10px rgba(0,0,0,0.1);
+    flex: 1; 
+    text-align: center;
+    border: #001f75;
+}
+
+.card h3 {
+    font-size: 18px;
+    color: #3f4750;
+    margin-bottom: 18px;
+    box-shadow: #0f1422;
+}
+
+.card strong {
+    font-size: 28px;
+    color: #001f75;
+}
+aside {
+    width: 260px;
+    background: #e2e8f0; 
+    flex-shrink: 0;
+    padding : 20px;
+    border-right: 1px solid #ddd;
+    margin: 0; 
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul li {
+    margin-bottom: 15px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+aside ul li a:hover {
+    color: #001f75;
+}

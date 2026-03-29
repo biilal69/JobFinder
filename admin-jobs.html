@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="admin-jobs.css">
     <title>Admin - Manage Jobs</title>
 </head>
 
@@ -25,65 +27,71 @@
         </nav>
     </header>
 
-    <h2>Admin Overview</h2>
+    <div class="job-wrapper">
+    
+    <aside>
+        <h3>Admin Panel</h3>
+        <ul>
+            <li><a href="admin-dashboard.html">📊 Dashboard Overview</a></li>
+            <li><a href="admin-jobs.html" class="active-link">💼 Manage Jobs</a></li>
+            <li><a href="add-job.html">➕ Add New Job</a></li>
+            <li><a href="applied-jobs.html">📩 Applied Jobs</a></li> 
+            <li><a href="jobs.html" target="_blank">🌐 View Site (Jobs)</a></li>
+            <li><a href="index.html">🏠 Home Page</a></li>
+            <li><a href="login.html" style="color: #991b1b;">🚪 Logout</a></li>
+        </ul>
+    </aside>
 
-    <div style="display: flex;">
-        <aside>
-            <ul>
-                <li><a href="admin-dashboard.html">Dashboard Overview</a></li>
-                <li><a href="admin-jobs.html">Manage Jobs</a></li>
-                <li><a href="add-job.html">Add New Job</a></li>
-            </ul>
-        </aside>
-
-        <main>
-            <h2>Current Job Vacancies</h2>
-
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Job Title</th>
-                        <th>Salary</th>
-                        <th>Status</th>
-                        <th>Actions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Frontend Developer</td>
-                        <td>12000 EGP</td>
-                        <td>Open</td>
-                        <td>
-                            <a href="job1-details.html">Edit</a>
-                            <button type="button">Delete</button>
-                        </td>
-                    </tr>
-                    <tr>
+    <main>
+        <h2 style="text-align: center; margin-bottom: 20px;">Admin Overview</h2>
+        
+        <h3>Current Job Vacancies</h3>  
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Job Title</th>
+                    <th>Salary</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Frontend Developer</td>
+                    <td>12000 EGP</td>
+                    <td><span class="status open">Open</span></td>
+                    <td class="button"> 
+                         <a href="edit-job.html" class="btn-edit">Edit</a> 
+                         <button type="button" class="btn-delete">Delete</button> 
+                    </td>
+                </tr>
+                 <tr>
                         <td>2</td>
                         <td>Backend Developer</td>
                         <td>15000 EGP</td>
-                        <td>Closed</td>
-                        <td>
-                            <a href="edit-job.html">Edit</a>
-                            <button type="button">Delete</button>
-                        </td>
+                        <td><span class="status closed">Closed</span></td>
+                        <td class="button"> 
+                         <a href="edit-job.html" class="btn-edit">Edit</a> 
+                         <button type="button" class="btn-delete">Delete</button> 
+                    </td>
                     </tr>
                     <tr>
                         <td>3</td>
                         <td>UI/UX Designer</td>
                         <td>9000 EGP</td>
-                        <td>Open</td>
-                        <td>
-                            <a href="job3-details.html">Edit</a>
-                            <button type="button">Delete</button>
-                        </td>
+                        <td><span class="status open">Open</span></td>
+                        <td class="button"> 
+                         <a href="edit-job.html" class="btn-edit">Edit</a> 
+                         <button type="button" class="btn-delete">Delete</button> 
+                    </td>
                     </tr>
                 </tbody>
-            </table>
-        </main>
-    </div>
+        </table>
+    </main>
+
+</div>
     <footer>
         &copy; 2026 JobFinder. All rights reserved.
     </footer>

@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="admin-dashboard.css">
     <title>Admin Dashboard</title>
    </head>
 <body>
@@ -19,16 +21,27 @@
         </nav>
     </header>
 
-    <div style="display: flex;"> 
-        <aside>
-            <h2>Admin Overview</h2>
-            <ul> 
-                <li><a href="admin-dashboard.html">Dashboard Overview</a></li>
-                <li><a href="admin-jobs.html">Manage Jobs</a></li>
-                <li><a href="add-job.html">Add New Job</a></li>
-                <li><a href="edit-job.html">Edit Job</a></li>
-            </ul>
-        </aside>
+    <div style="display: flex;">
+        <div class="dashboard-wrapper">
+         <aside>
+          <h3>Admin Panel</h3>
+          <ul>
+        <li><a href="admin-dashboard.html" class="active-link">📊 Dashboard Overview</a></li>
+        
+    
+        
+        <li><a href="admin-jobs.html">💼 Manage Jobs</a></li>
+        <li><a href="add-job.html">➕ Add New Job</a></li>
+        <li><a href="applied-jobs.html">📩 Applied Jobs</a></li> 
+
+        <li><a href="jobs.html" target="_blank">🌐 View Site (Jobs)</a></li>
+        <li><a href="index.html">🏠 Home Page</a></li>
+        
+        
+
+        <li><a href="login.html" style="color: #991b1b;">🚪 Logout</a></li>
+    </ul>
+   </aside>
 
         <main>
             <h2>General Statistics</h2>
@@ -44,14 +57,23 @@
                     <p><strong>1</strong></p>
                 </div>
 
-                <hr>
-
                 <div class="card">
                     <h3>Daily Visitors</h3>
                     <p><strong>150</strong></p>
                 </div>
+                
+                <div class="card">
+                  <h3>Total Applications</h3>
+                 <p><strong>45</strong></p>
+                </div>
+
+                <div class="card">
+                 <h3>New Messages</h3>
+                 <p><strong>5</strong></p>
+                 </div>
             </div>
         </main>
+      </div>
     </div>
     <footer>
         &copy; 2026 JobFinder. All rights reserved.
