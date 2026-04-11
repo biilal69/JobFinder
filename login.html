@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - JobFinder</title>
+ 
+    <style>
+        .msg { font-weight: bold; margin-bottom: 10px; }
+        .error { color: red; }
+        .success { color: green; }
+    </style>
 </head>
-
 <body>
     <header>
         <div>
@@ -23,24 +27,23 @@
     </header>
 
     <main>
-        <form action="jobs.html">
+      
+        <div id="login-msg" class="msg"></div>
+        
+        <form id="loginForm">
             <table>
                 <tr>
-
                     <td><label for="uname">Username</label></td>
                     <td><input type="text" id="uname" name="uname" placeholder="Your name"></td>
                 </tr>
-
                 <tr>
                     <td><label for="pword">Password</label></td>
                     <td><input type="password" id="pword" name="pword"></td>
                 </tr>
-
                 <tr>
                     <td></td>
                     <td><input type="submit" value="login"></td>
                 </tr>
-
             </table>
         </form>
 
@@ -52,6 +55,8 @@
     <footer>
         &copy; 2026 JobFinder. All rights reserved.
     </footer>
-</body>
 
+    
+    <script src="auth.js"></script>
+</body>
 </html>
