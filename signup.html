@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sign up </title>
+    <title>Sign Up - JobFinder</title>
+    <style>
+        .msg { font-weight: bold; margin-bottom: 10px; }
+        .error { color: red; }
+        .success { color: green; }
+    </style>
 </head>
-
-  <body>
-     <header>
+<body>
+    <header>
         <div>
             <h1 class="logo">JobFinder</h1>
         </div>
@@ -21,58 +25,55 @@
         </nav>
     </header>
     <main>
-     <form action="jobs.html">
-      <table>
-        <tr>
-          <td><label for="fname">First name</label></td>
-          <td><input type="text" id="fname" name="fname" placeholder="First name"></td>
-        </tr>
-        
-        <tr>
-            <td><label for="lname">Last name</label></td>
-            <td><input type="text" id="lname" name="lname" placeholder="Last name"></td>
-        </tr>
-        
-        <tr>
-            <td><label for="Username">Username</label></td>
-            <td><input type="text" id="Username" name="Username"></td>
-        </tr>
+        <div id="signup-msg" class="msg"></div>
 
-        <tr>
-            <td><label for="email">Email</label></td>
-            <td><input type="text" id="email" name="email" placeholder="YourEmail@example.com"></td>
-        </tr>
-
-        <tr>
-            <td><label for="CPword">Create password</label></td>
-            <td><input type="password" id="CPword" name="CPword"></td>
-        </tr>
-        
-        <tr>
-            <td><label for="CPword2">Confirm password</label></td>
-            <td><input type="password" id="CPword2" name="CPword2"></td>
-        </tr>
-        
-        <tr>
-            <td><label for="cname">Company name</label></td>
-            <td><input type="text" id="cname" name="cname"></td>
-        </tr>
-    
-        <tr>
-            <td><label for="admin checkbox">Admin</label></td>
-            <td><input type="checkbox" id="admin_checkbox" name="admin_checkbox"></td>
-        </tr>
-        
-        <tr>
-            <td></td>
-            <td><input type="submit" value="Sign Up"></td>
-        </tr>
-       </table>     
-      </form>
+        <form id="signupForm">
+            <table>
+                <tr>
+                    <td><label for="fname">First name</label></td>
+                    <td><input type="text" id="fname" name="fname" placeholder="First name"></td>
+                </tr>
+                <tr>
+                    <td><label for="lname">Last name</label></td>
+                    <td><input type="text" id="lname" name="lname" placeholder="Last name"></td>
+                </tr>
+                <tr>
+                    <td><label for="Username">Username</label></td>
+                    <td><input type="text" id="Username" name="Username"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="text" id="email" name="email" placeholder="YourEmail@example.com"></td>
+                </tr>
+                <tr>
+                    <td><label for="CPword">Create password</label></td>
+                    <td><input type="password" id="CPword" name="CPword"></td>
+                </tr>
+                <tr>
+                    <td><label for="CPword2">Confirm password</label></td>
+                    <td><input type="password" id="CPword2" name="CPword2"></td>
+                </tr>
+                <tr>
+                    <td><label for="cname">Company name</label></td>
+                    <td><input type="text" id="cname" name="cname"></td>
+                </tr>
+                <tr>
+                    <td><label for="admin_checkbox">Admin</label></td>
+                    <td><input type="checkbox" id="admin_checkbox" name="admin_checkbox"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Sign Up"></td>
+                </tr>
+            </table>     
+        </form>
     </main>
     <br>
     <footer>
         &copy; 2026 JobFinder. All rights reserved.
     </footer>
-  </body>
+
+   
+    <script src="auth.js"></script>
+</body>
 </html>
