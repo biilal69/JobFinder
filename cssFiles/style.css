@@ -186,4 +186,70 @@ padding:20px;
 background-color:#001f75;
 color:white;
 margin-top:0%;
+
+
+}
+
+.container{
+  max-width:700px;
+  margin:30px auto;
+  padding:0 10px;
+}
+
+.job-list{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.job-card{
+  display:flex;
+  gap:15px;
+  padding:18px;
+  border:1px solid #eee;
+  border-radius:8px;
+  background:#fff;
+}
+
+.job-logo{
+  width:50px;
+  height:50px;
+  background:#eee;
+  border-radius:6px;
+  flex-shrink:0;
+}
+
+
+.job-content{
+  flex:1;
+}
+
+.job-card h3{
+  font-size:18px;
+  margin-bottom:5px;
+}
+
+.company{
+  color:#2563eb;
+  font-weight:500;
+}
+
+.job-meta{
+  font-size:14px;
+  color:#555;
+}
+
+.status.applied{
+  background:#dbeafe;
+  color:#1e40af;
+}
+
+.status.review{
+  background:#fef3c7;
+  color:#92400e;
+}
+
+.btn.disabled{
+  background:#ccc;
+  cursor:not-allowed;
 }
