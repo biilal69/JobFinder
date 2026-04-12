@@ -1,25 +1,64 @@
+header {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 80px !important;
+    z-index: 10001 !important; /* الهيدر فوق الكل دائماً */
+    background-color: white !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 0 5% !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important;
+}
+
+aside {
+    position: fixed !important;
+    top: 70px !important; /* لازم يبدأ من بعد الهيدر عشان ميتغطاش */
+    left: 0 !important;
+    width: 260px !important;
+    height: calc(100vh - 130px) !important; /* طرحنا الهيدر والفوتر */
+    background: #f4e6f3 !important;
+    padding: 20px !important;
+    z-index: 9999 !important; /* أقل من الهيدر والفوتر */
+    overflow-y: auto !important;
+}
 .stats-container {
     display: flex;
     gap: 30px;
     flex-wrap: wrap; 
     padding: 20px 0;
-    border: #001f75;
+    border: #c056a5;
 }
+
 .dashboard-wrapper {
     display: flex !important;
     width: 100%;
-    min-height: 100vh;
 }
+
 main {
-    margin-top: 0%;
+    margin-left: 260px !important;
+    margin-top: 70px !important; /* مسافة الهيدر */
+    margin-bottom: 60px !important; /* مسافة الفوتر الثابت */
+    padding: 40px !important;
     flex-grow: 1;
-    padding-left:20px;
-    background-color: #f8fafc;
+    background-color: #f8fafc !important;
+    min-height: calc(100vh - 130px) !important;
 }
 html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%; 
+    margin: 0 !important;
+    padding: 0 !important;
+    height: auto !important; /* لازم تكون auto مش 100% */
+    overflow-y: auto !important; /* السماح بالنزول لتحت */
+    overflow-x: hidden; 
+}
+main h2 {
+    font-size: 32px; /* كبّري الرقم ده لحد ما يعجبك */
+    font-weight: bold; /* عشان تكون عريضة وواضحة */
+    color: #333; /* لون غامق عشان تبان */
+    margin-bottom: 25px; /* مسافة تحتها عشان متبقاش لازقة في الكروت */
+    padding-left: 5px; /* اختيارى: زقة بسيطة من الشمال */
 }
 
 .card {
@@ -31,7 +70,7 @@ html, body {
     box-shadow: 10px 12px 10px rgba(0,0,0,0.1);
     flex: 1; 
     text-align: center;
-    border: #001f75;
+    border: #872f78;
 }
 
 .card h3 {
@@ -43,16 +82,9 @@ html, body {
 
 .card strong {
     font-size: 28px;
-    color: #001f75;
+    color: #7a2e6c;
 }
-aside {
-    width: 260px;
-    background: #e2e8f0; 
-    flex-shrink: 0;
-    padding : 20px;
-    border-right: 1px solid #ddd;
-    margin: 0; 
-}
+
 
 aside ul {
     list-style: none;
@@ -69,5 +101,27 @@ aside ul li a {
 }
 
 aside ul li a:hover {
-    color: #001f75;
+    color: #6b2e62;
+}
+footer {
+    position: fixed !important; 
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 60px !important;
+    background-color: white !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    z-index: 10002 !important; /* أعلى من السايد بار */
+    border-top: 1px solid #eee !important;
+    margin: 0 !important;
+}
+
+/* للموبايل: الفوتر يرجع يملى الشاشة كلها */
+@media (max-width: 768px) {
+    footer {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
 }

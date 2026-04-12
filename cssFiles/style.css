@@ -14,21 +14,22 @@ body {
     line-height: 1.8;
     color: #333;
     background-color: #fdfdfd;
-    padding-top: 90px;
+    padding-top: 0;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 5%;
-    background-color: #fff;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 90px !important;
+    z-index: 10001 !important;
+    background-color: white !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 0 5% !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important;
 }
 
 .logo {
@@ -212,14 +213,42 @@ background-color:#fee2e2;
 color:#991b1b;
 }
 
+header {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 70px !important;
+    z-index: 10001 !important;
+    background-color: white !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 0 5% !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important;
+}
+
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #fff;
-    bottom: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 60px !important;
+    background-color: white !important;
+    z-index: 10002 !important;
+    
+    /* لجعل النص في المنتصف تماماً */
+    display: flex !important;
+    justify-content: center !important; /* محاذاة أفقية */
+    align-items: center !important;     /* محاذاة رأسية */
+    
+    /* إضافة الـ Border */
+    border-top: 2px solid #eee !important; /* الخط الرمادي الخفيف فوق الفوتر */
+    
+    /* تنسيق النص */
+    color: #555 !important;
+    font-size: 20px !important;
+    margin: 0 !important;
 }
 
 .container{
