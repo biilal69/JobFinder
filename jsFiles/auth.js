@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // ----- LOGIN VALIDATION -----
     if (loginForm) {
         loginForm.addEventListener("submit", function(event) {
-            event.preventDefault(); // Stop page from refreshing
+            event.preventDefault(); 
             
             const uname = document.getElementById("uname").value.trim();
             const pword = document.getElementById("pword").value.trim();
@@ -15,11 +15,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
             if (uname === "" || pword === "") {
                 msgBox.textContent = "Error: Please fill in all fields.";
-                msgBox.className = "msg error";
+                msgBox.style.color = "red";
             } else {
-                msgBox.textContent = "Success! Redirecting to jobs...";
-                msgBox.className = "msg success";
-                // Simulate redirect after 1 second
+                msgBox.textContent = "Success! Redirecting...";
+                msgBox.style.color = "green";
+                
+                // For now, assume login goes to normal jobs page. 
                 setTimeout(() => { window.location.href = "jobs.html"; }, 1000);
             }
         });
@@ -28,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // ----- SIGNUP VALIDATION -----
     if (signupForm) {
         signupForm.addEventListener("submit", function(event) {
-            event.preventDefault(); // Stop page from refreshing
+            event.preventDefault(); 
             
             const fname = document.getElementById("fname").value.trim();
             const lname = document.getElementById("lname").value.trim();
@@ -36,35 +37,45 @@ document.addEventListener("DOMContentLoaded", function() {
             const email = document.getElementById("email").value.trim();
             const pword1 = document.getElementById("CPword").value.trim();
             const pword2 = document.getElementById("CPword2").value.trim();
+            const isAdmin = document.getElementById("admin_checkbox").checked;
             const msgBox = document.getElementById("signup-msg");
 
-            // 1. Check for empty fields
             if (fname === "" || lname === "" || uname === "" || email === "" || pword1 === "" || pword2 === "") {
                 msgBox.textContent = "Error: Please fill in all required fields.";
-                msgBox.className = "msg error";
+                msgBox.style.color = "red";
                 return;
             }
 
-            // 2. Check password length
             if (pword1.length < 8) {
-                msgBox.textContent = "Error: Password must be at least 8 characters long.";
-                msgBox.className = "msg error";
+                msgBox.textContent = "Error: Password must be at least 8 characters.";
+                msgBox.style.color = "red";
                 return;
             }
 
-            // 3. Check if passwords match
             if (pword1 !== pword2) {
                 msgBox.textContent = "Error: Passwords do not match.";
-                msgBox.className = "msg error";
+                msgBox.style.color = "red";
                 return;
             }
 
-            // If everything is correct
-            msgBox.textContent = "Success! Account created. Redirecting...";
-            msgBox.className = "msg success";
-            
-            // Simulate redirect after 1.5 seconds
-            setTimeout(() => { window.location.href = "jobs.html"; }, 1500);
+            // --- CONNECTING MY WORK TO HAMZA, USE GET ITEM FOR ADMIN  ---
+            if (isAdmin) {
+                // Save "admin" to browser memory for Hamza to use later
+                localStorage.setItem("userRole", "admin");
+                msgBox.textContent = "Success! Admin Account created. Redirecting to Admin Dashboard...";
+                msgBox.style.color = "green";
+                
+                // Redirects to admin.html (Yasmine/Hamza will build this page)
+                setTimeout(() => { window.location.href = "admin.html"; }, 1500);
+            } else {
+                // Save "user" to browser memory
+                localStorage.setItem("userRole", "user");
+                msgBox.textContent = "Success! User Account created. Redirecting to Jobs...";
+                msgBox.style.color = "green";
+                
+                // Redirects to normal jobs page
+                setTimeout(() => { window.location.href = "jobs.html"; }, 1500);
+            }
         });
     }
 });
