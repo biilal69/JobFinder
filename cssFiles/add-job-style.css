@@ -1,60 +1,66 @@
-/* GLOBAL */
-
-*{
-margin:0 !important;
-padding:0 ;
-box-sizing:border-box;
-font-family: "Segoe UI", Arial, sans-serif;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
 }
 
-
-body{
-    background: url("images/background.png") no-repeat center center !important;
-    background-size: cover !important;
-    background-color: #050b08 !important;
-    min-height: 100vh !important;
+label{
+    color: #7b4aa1 !important;
 }
 
-/* NAVBAR */
-
-.navbar{
-display:flex !important;
-justify-content:space-between !important;
-align-items:center !important;
-padding:18px 60px !important;
-background:#111 !important;
-border-bottom:1px solid #00ff88 !important;
+button{
+    background-color: #7b4aa1 !important;
+    color: #f8f9fa !important;
 }
 
-.logo{
-font-size:24px !important;
-font-weight:bold !important;
-color:#00ff88 !important;
-letter-spacing:1px !important;
+.jobs-container{
+display:grid !important;
+grid-template-columns:1fr 1fr !important;
+gap:20px !important;
+padding:20px !important;
+max-width:1000px !important;
+margin:auto !important;
 }
-
-.nav-links{
-list-style:none !important;
-display:flex !important;
-gap:30px !important;
+.job-card{
+padding:25px !important;
+border-radius:12px !important;
+background:white !important;
+box-shadow:0 2px 10px rgba(0,0,0,0.1) !important;
+transition: all 0.3s ease !important;
 }
-
-.nav-links a{
-text-decoration:none !important;
-color:#ccc !important;
-font-weight:500 !important;
-transition:0.2s !important;
+.job-card:hover{
+transform: translateY(-5px) !important;
+box-shadow:0 6px 16px rgba(0,0,0,0.15) !important;
 }
-
-.nav-links a:hover{
-color:#00ff88 !important;
+.job-card h3{
+font-size:22px !important;
+margin-bottom:10px !important;
+color:#111827 !important;
 }
-
-.active{
-color:#00ff88 !important;
-font-weight:600 !important;
+.job-card p{
+margin:6px 0 !important;
+font-size:15px !important;
+color:#374151 !important;
 }
-
-#button-jobs {
-    margin-top: 60px !important;
+.job-card strong{
+color:#111827 !important;
+}
+.job-card h3::after{
+content:"" !important;
+display:block !important;
+width:50px !important;
+height:3px !important;
+background-color:#7b4aa1 !important;
+margin-top:6px !important;
+border-radius:2px !important;
+}
+button{
+padding:10px 16px !important;
+border:none !important;
+background-color:#7b4aa1 !important;
+color:white !important;
+border-radius:5px !important;
+cursor:pointer !important;
+}
+button:hover{
+background:#6500b3 !important;
 }
