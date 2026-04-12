@@ -1,39 +1,49 @@
 
  .job-wrapper {
-    display: flex !important;
+    display: flex;
     min-height: 100vh; 
     align-items: stretch;
 }
-header{height: 80px !important;}
 
 aside {
-    margin-top: 10px;
-    position: fixed !important;
-    top: 70px !important; 
-    left: 0 !important;
+
     width: 260px !important;
-    height: calc(100vh - 130px) !important; 
-    z-index: 9999 !important;
-    background: #f4e6f3 !important;
-    overflow-y: auto !important;
+    min-width: 260px !important;
+    background-color: #f8f1f1; 
+    height: 100vh;
+    position: sticky !important; 
+    top: 0;
+}
+aside h3 {
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+aside li{
+    font-size: 18px;
 }
 
+/* لازم تكتبي main واللزق فيها الكلاس عشان الـ CSS يفهم إنك بتحددي بدقة */
+main.admin-main-jobs {
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 20px !important;
+    display: block !important;
+}
 
-main {
-    margin-left: 260px !important; 
-    margin-top: 70px !important;  
-    margin-bottom: 60px !important; 
-    padding: 40px !important;
-    padding-right: 0%;
-    min-height: calc(100vh - 130px) !important;
+/* وعشان تكبري كلمة Admin Overview هنا بالذات */
+main.admin-main-jobs h2 {
+    font-size: 45px !important;
+    font-weight: bold !important;
+    text-align: center !important;
 }
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%; 
-}
-main h3{ 
-    font-size: 23px;
+main.admin-main-jobs h3{ 
+    text-align: left !important;  
+    margin-left: 10px !important; 
+    font-size: 25px !important;
+    font-weight: bold !important;
+    margin-top: 20px !important;
+    margin-bottom: 15px !important;
+
 }
 body h2{ 
     font-size: 30px;
@@ -96,24 +106,4 @@ aside ul li a {
 
 aside ul li a:hover {
     color: #001f75;
-}
-footer {
-    position: fixed !important;
-    bottom: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 60px !important;
-    background-color: white !important;
-    z-index: 10002 !important;
-    
-    
-    display: flex !important;
-    justify-content: center !important; 
-    align-items: center !important;     
-    
-    border-top: 2px solid #eee !important; 
-    
-    color: #555 !important;
-    font-size: 20px !important;
-    margin: 0 !important;
 }

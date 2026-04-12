@@ -14,7 +14,7 @@ body {
     line-height: 1.8;
     color: #333;
     background-color: #fdfdfd;
-    padding-top: 0;
+    padding-top: 90px;
     display: flex;
     flex-direction: column;
     min-height: 100vh
@@ -114,6 +114,7 @@ cursor:pointer;
 .search-section button:hover{
 background:#6500b3;
 }
+
 .jobs-container{
 display:grid;
 grid-template-columns:1fr 1fr;
