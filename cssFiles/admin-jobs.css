@@ -1,37 +1,31 @@
 
  .job-wrapper {
-    display: flex !important;
+    display: flex;
     min-height: 100vh; 
     align-items: stretch;
 }
-header{height: 80px !important;}
 
 aside {
     margin-top: 10px;
-    position: fixed !important;
-    top: 70px !important; 
-    left: 0 !important;
-    width: 260px !important;
-    height: calc(100vh - 130px) !important; 
-    z-index: 9999 !important;
-    background: #f4e6f3 !important;
-    overflow-y: auto !important;
+    position: fixed;
+    top: 70px; 
+    left: 0;
+    width: 260px;
+    height: calc(100vh - 130px); 
+    z-index: 9999;
+    background: #f4e6f3;
+    overflow-y: auto;
 }
-
 
 main {
-    margin-left: 260px !important; 
-    margin-top: 70px !important;  
-    margin-bottom: 60px !important; 
-    padding: 40px !important;
+    margin-left: 260px; 
+    margin-top: 70px;  
+    margin-bottom: 60px; 
+    padding: 40px;
     padding-right: 0%;
-    min-height: calc(100vh - 130px) !important;
+    min-height: calc(100vh - 130px);
 }
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%; 
-}
+
 main h3{ 
     font-size: 23px;
 }
@@ -96,24 +90,4 @@ aside ul li a {
 
 aside ul li a:hover {
     color: #001f75;
-}
-footer {
-    position: fixed !important;
-    bottom: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 60px !important;
-    background-color: white !important;
-    z-index: 10002 !important;
-    
-    
-    display: flex !important;
-    justify-content: center !important; 
-    align-items: center !important;     
-    
-    border-top: 2px solid #eee !important; 
-    
-    color: #555 !important;
-    font-size: 20px !important;
-    margin: 0 !important;
 }
