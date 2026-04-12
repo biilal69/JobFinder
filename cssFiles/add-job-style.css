@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
@@ -63,4 +64,12 @@ cursor:pointer !important;
 }
 button:hover{
 background:#6500b3 !important;
+}
+.active{
+color:#00ff88;
+font-weight:600;
+}
+
+#button-jobs {
+    margin-top: 60px;
 }
