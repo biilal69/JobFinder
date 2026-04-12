@@ -8,6 +8,7 @@
         <meta name="description" content="Search thousands of jobs opportunities in one place!">
         <link rel="stylesheet" href="cssFiles/style.css">
         <link rel="stylesheet" href="cssFiles/index.css">
+            
         <script src="jsFiles/index.js" defer></script>
     </head>
 
@@ -34,11 +35,22 @@
             <!-- background img will be implemented in css -->
             <h1>Make your Career now!</h1>
             <h2>Find your dream job, Connect with inspiring companies instantly.</h2>
-            <form action="">
-                <input name="job_title" type="text" placeholder="Job Title, Keyword">
-                <input name="years_of_experience" type="number" placeholder="Years of experience" min="0">
-                <button>Explore Jobs</button>
-            </form>
+         <form action="jobs.html" method="GET">
+
+<input 
+name="title"
+type="text"
+placeholder="Job Title, Keyword" required>
+
+<input 
+name="experience"
+type="number"
+placeholder="Years of experience"
+min="0">
+
+<button type="submit">Explore Jobs</button>
+
+</form>
         </section>
 
         <!-- features of our website -->
