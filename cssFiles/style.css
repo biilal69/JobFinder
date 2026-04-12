@@ -65,6 +65,12 @@ span {
     color: #7b4aa1;
 }
 
+#logout-btn {
+    color: #78135d;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
 .search-section{
 background:white;
 padding:25px;

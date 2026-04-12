@@ -1,12 +1,17 @@
-const menuBtn = document.getElementById('menu-btn');
-const navMenu = document.getElementById('nav-menu');
+document.addEventListener("DOMContentLoaded", function() {
+    const userName = localStorage.getItem("userName");
+    const heroSection = document.querySelector(".hero");
+    const h1 = document.querySelector(".hero h1");
 
-menuBtn.onclick = function() {
-    navMenu.classList.toggle('active');
-};
+    if (userName && h1) {
+        const welcomeTag = document.createElement("p");
+        welcomeTag.innerHTML = `Welcome, <strong>${userName}</strong>`;
+        
+        welcomeTag.style.color = "#7b4aa1";
+        welcomeTag.style.fontSize = "1.5rem";
+        welcomeTag.style.marginBottom = "10px";
+        welcomeTag.style.fontWeight = "500";
 
-document.querySelectorAll('.nav-bar a').forEach(link => {
-    link.onclick = () => {
-        navMenu.classList.remove('active');
-    };
+        heroSection.insertBefore(welcomeTag, h1);
+    }
 });

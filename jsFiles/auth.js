@@ -17,11 +17,14 @@ document.addEventListener("DOMContentLoaded", function() {
                 msgBox.textContent = "Error: Please fill in all fields.";
                 msgBox.style.color = "red";
             } else {
+                localStorage.setItem("userName", uname);
+                let role = uname.toLowerCase().includes("admin") ? "admin" : "user";
+                localStorage.setItem("userRole", role);
                 msgBox.textContent = "Success! Redirecting...";
                 msgBox.style.color = "green";
                 
                 // For now, assume login goes to normal jobs page. 
-                setTimeout(() => { window.location.href = "jobs.html"; }, 1000);
+                setTimeout(() => { window.location.href = "index.html";}, 1000);
             }
         });
     }
@@ -62,19 +65,21 @@ document.addEventListener("DOMContentLoaded", function() {
             if (isAdmin) {
                 // Save "admin" to browser memory for Hamza to use later
                 localStorage.setItem("userRole", "admin");
+                localStorage.setItem("userName", fname);
                 msgBox.textContent = "Success! Admin Account created. Redirecting to Admin Dashboard...";
                 msgBox.style.color = "green";
                 
                 // Redirects to admin.html (Yasmine/Hamza will build this page)
-                setTimeout(() => { window.location.href = "admin-dashboard.html"; }, 1500);
+                setTimeout(() => { window.location.href = "index.html"; }, 1500);
             } else {
                 // Save "user" to browser memory
                 localStorage.setItem("userRole", "user");
+                localStorage.setItem("userName", fname);
                 msgBox.textContent = "Success! User Account created. Redirecting to Jobs...";
                 msgBox.style.color = "green";
                 
                 // Redirects to normal jobs page
-                setTimeout(() => { window.location.href = "jobs.html"; }, 1500);
+                setTimeout(() => { window.location.href = "index.html"; }, 1500);
             }
         });
     }
