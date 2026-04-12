@@ -41,6 +41,7 @@ storedJobs.forEach(function(job) {
 
         <a href="job1-details.html">
         <button class="btn-secondary">View Details</button>
+        <button onclick="applyJob('${job.name}')">Apply</button>
         </a>
 
     </article>
@@ -111,16 +112,20 @@ filterJobs();
 
 });
 
-function applyJob(jobTitle){
+function applyJob(jobName){
 
 let appliedJobs = JSON.parse(localStorage.getItem("appliedJobs")) || [];
 
-appliedJobs.push(jobTitle);
+
+if(!appliedJobs.includes(jobName)){
+    appliedJobs.push(jobName);
+}
+
+appliedJobs.push(jobName);
 
 localStorage.setItem("appliedJobs", JSON.stringify(appliedJobs));
 
 alert("Application submitted successfully!");
 
 window.location.href = "applied-jobs.html";
-
 }
