@@ -6,28 +6,44 @@
 }
 
 aside {
-    margin-top: 10px;
-    position: fixed;
-    top: 70px; 
-    left: 0;
-    width: 260px;
-    height: calc(100vh - 130px); 
-    z-index: 9999;
-    background: #f4e6f3;
-    overflow-y: auto;
+
+    width: 260px !important;
+    min-width: 260px !important;
+    background-color: #f8f1f1; 
+    height: 100vh;
+    position: sticky !important; 
+    top: 0;
+}
+aside h3 {
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+aside li{
+    font-size: 18px;
 }
 
-main {
-    margin-left: 260px; 
-    margin-top: 70px;  
-    margin-bottom: 60px; 
-    padding: 40px;
-    padding-right: 0%;
-    min-height: calc(100vh - 130px);
+/* لازم تكتبي main واللزق فيها الكلاس عشان الـ CSS يفهم إنك بتحددي بدقة */
+main.admin-main-jobs {
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 20px !important;
+    display: block !important;
 }
 
-main h3{ 
-    font-size: 23px;
+/* وعشان تكبري كلمة Admin Overview هنا بالذات */
+main.admin-main-jobs h2 {
+    font-size: 45px !important;
+    font-weight: bold !important;
+    text-align: center !important;
+}
+main.admin-main-jobs h3{ 
+    text-align: left !important;  
+    margin-left: 10px !important; 
+    font-size: 25px !important;
+    font-weight: bold !important;
+    margin-top: 20px !important;
+    margin-bottom: 15px !important;
+
 }
 body h2{ 
     font-size: 30px;

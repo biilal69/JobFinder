@@ -1,14 +1,4 @@
-aside {
-    position: fixed;
-    top: 70px;
-    left: 400;
-    width: 260px;
-    height: calc(100vh - 130px);
-    background: #f4e6f3;
-    padding: 20px;
-    z-index: 9999;
-    overflow-y: auto;
-}
+
 .stats-container {
     display: flex;
     gap: 30px;
@@ -17,33 +7,50 @@ aside {
     border: #c056a5;
 }
 
+
+
+main.admin-main-content {
+    flex-grow: 1 !important; /* خليه يملأ باقي الشاشة */
+    padding: 30px !important;
+    padding-top: 10px !important;
+    margin: 0px !important;
+    margin-left: 0 !important;   /* شيلي أي margin-left قديم جربناه */
+    max-width: none !important;
+}
+
 .dashboard-wrapper {
-    display: flex;
-    width: 100%;
+    display: flex !important;
+    min-height: 100vh;
+    align-items: stretch;
 }
+aside {
 
-main {
-    margin-left: 260px;
-    margin-top: 70px;
-    margin-bottom: 60px; 
-    padding: 40px;
-    flex-grow: 1;
-    background-color: #f8fafc;
-    min-height: calc(100vh - 130px);
+    width: 260px !important;
+    min-width: 260px !important;
+    background-color: #f8f1f1; 
+    height: 100vh;
+    position: sticky !important; 
+    top: 0;
 }
-
-main h2 {
-    font-size: 32px; 
-    font-weight: bold; 
-    color: #333;
-    margin-bottom: 25px; 
+main.admin-main-content h2 {
+    font-size: 2.3rem !important; /* جربي 2.5 أو 3 لحد ما يعجبك الحجم */
+    font-weight: bold !important;
+    margin-bottom: 25px !important; /* عشان متبقاش لازقة في الكروت اللي تحتها */
+    color: #333; /* لو حابة تغمقي اللون شوية */
     padding-left: 5px; 
+}
+aside h3 {
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+aside li{
+    font-size: 18px;
 }
 
 .card {
     min-width: 250px;
     font-size:x-large;
-    background: white;
+    background: #eeeeee73;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 10px 12px 10px rgba(0,0,0,0.1);
@@ -53,7 +60,7 @@ main h2 {
 }
 
 .card h3 {
-    font-size: 18px;
+    font-size: 22px;
     color: #3f4750;
     margin-bottom: 18px;
     box-shadow: #0f1422;
