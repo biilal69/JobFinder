@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 msgBox.style.color = "green";
                 
                 // Redirects to admin.html (Yasmine/Hamza will build this page)
-                setTimeout(() => { window.location.href = "admin.html"; }, 1500);
+                setTimeout(() => { window.location.href = "admin-dashboard.html"; }, 1500);
             } else {
                 // Save "user" to browser memory
                 localStorage.setItem("userRole", "user");
