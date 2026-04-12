@@ -20,7 +20,8 @@ document.addEventListener("DOMContentLoaded", function () {
         if (userRole === "admin") {
             links += `
                 <li><a href="admin-dashboard.html">Dashboard</a></li>
-                <li><a href="admin-jobs.html">Manage Jobs</a></li>
+                <li><a href="jobs.html">Company Jobs</a></li>
+                <li><a href="add-job.html">Add New Job</a></li>
             `;
         } 
         else {
