@@ -19,7 +19,6 @@ if(experienceInput && searchExperience){
 experienceInput.value = searchExperience;
 }
 
-
 function filterJobs(){
 
 let titleValue = titleInput ? titleInput.value.toLowerCase() : "";
@@ -69,17 +68,28 @@ message.style.display = "none";
 
 }
 
-if(titleInput){
-titleInput.addEventListener("input", filterJobs);
-}
-
-if(experienceInput){
-experienceInput.addEventListener("input", filterJobs);
-}
-
 if(statusFilter){
 statusFilter.addEventListener("change", filterJobs);
 }
+
+
+if(titleInput){
+titleInput.addEventListener("input", function(){
+if(titleInput.value === ""){
+filterJobs();
+}
+});
+}
+
+if(experienceInput){
+experienceInput.addEventListener("input", function(){
+if(experienceInput.value === ""){
+filterJobs();
+}
+});
+}
+
+
 const form = document.querySelector(".search-form");
 
 if(form){
@@ -91,8 +101,9 @@ filterJobs();
 
 filterJobs();
 
-
 });
+
+
 function applyJob(jobTitle){
 
 let appliedJobs = JSON.parse(localStorage.getItem("appliedJobs")) || [];
@@ -105,4 +116,4 @@ alert("Application submitted successfully!");
 
 window.location.href = "applied-jobs.html";
 
-}   
+}
