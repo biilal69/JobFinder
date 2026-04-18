@@ -1,12 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // 1. توحيد المفتاح ليكون "jobs" كما في صفحة الإضافة والعرض
+  
     const STORAGE_KEY = "jobs";
 
     function getJobs() {
         return JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
     }
-
-    // 2. دالة تحديث أرقام الإحصائيات (Dashboard)
+(Dashboard)
     function updateDashboardStats() {
         const jobs = getJobs();
         const openJobs = jobs.filter(j => j.status && j.status.toLowerCase() === "open").length;
@@ -19,14 +18,12 @@ document.addEventListener("DOMContentLoaded", function () {
         if (closedEl) closedEl.innerText = closedJobs;
     }
 
-    // 3. دالة عرض الجدول ديناميكياً (Admin Manage Jobs)
+    
     function renderAdminTable() {
         const tbody = document.querySelector(".admin-main-jobs table tbody");
-        if (!tbody) return; // لو مش في صفحة الجدول ميعملش حاجة
-
+        if (!tbody) return; 
         const jobs = getJobs();
-        tbody.innerHTML = ""; // مسح الصفوف الثابتة القديمة
-
+        tbody.innerHTML = ""; 
         jobs.forEach((job, index) => {
             const row = document.createElement("tr");
             row.innerHTML = `
@@ -42,11 +39,11 @@ document.addEventListener("DOMContentLoaded", function () {
             tbody.appendChild(row);
         });
 
-        // تفعيل أزرار الحذف بعد رسم الجدول
+       
         attachDeleteEvents();
     }
 
-    // 4. دالة الحذف
+    
     function attachDeleteEvents() {
         document.querySelectorAll('.btn-delete').forEach(btn => {
             btn.onclick = function() {
@@ -56,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     jobs.splice(index, 1);
                     localStorage.setItem(STORAGE_KEY, JSON.stringify(jobs));
                     
-                    // تحديث الجدول والإحصائيات فوراً
+                    
                     renderAdminTable();
                     updateDashboardStats();
                 }
@@ -64,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // تشغيل الدوال عند تحميل الصفحة
+    
     updateDashboardStats();
     renderAdminTable();
 });
