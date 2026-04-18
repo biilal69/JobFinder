@@ -1,5 +1,7 @@
+
+let storedJobs = JSON.parse(localStorage.getItem("jobs")) || [];
 document.addEventListener("DOMContentLoaded", function () {
-   
+    
     const STORAGE_KEY = "jobs";
 
     function getJobs() {
@@ -10,7 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
     function updateDashboardStats() {
         const jobs = getJobs();
         
-        .length;
+        
+        const openJobs = jobs.filter(j => j.status && j.status.toString().toLowerCase() === "open").length;
         const closedJobs = jobs.filter(j => j.status && j.status.toString().toLowerCase() === "closed").length;
 
         const openEl = document.getElementById("open-jobs-count");
@@ -68,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // تشغيل الدوال بمجرد فتح الصفحة
+    
     updateDashboardStats();
     renderAdminTable();
 });
