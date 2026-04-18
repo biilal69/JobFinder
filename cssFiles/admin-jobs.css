@@ -22,7 +22,7 @@ aside li{
     font-size: 18px;
 }
 
-/* لازم تكتبي main واللزق فيها الكلاس عشان الـ CSS يفهم إنك بتحددي بدقة */
+
 main.admin-main-jobs {
     max-width: none !important;
     margin: 0 !important;
@@ -30,7 +30,7 @@ main.admin-main-jobs {
     display: block !important;
 }
 
-/* وعشان تكبري كلمة Admin Overview هنا بالذات */
+
 main.admin-main-jobs h2 {
     font-size: 45px !important;
     font-weight: bold !important;
