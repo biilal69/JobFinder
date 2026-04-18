@@ -121,7 +121,7 @@ if(!appliedJobs.includes(jobName)){
     appliedJobs.push(jobName);
 }
 
-appliedJobs.push(jobName);
+
 
 localStorage.setItem("appliedJobs", JSON.stringify(appliedJobs));
 
